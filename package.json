@@ -1,0 +1,22 @@
+{
+  "name": "expenses-chart-component",
+  "version": "1.0.0",
+  "description": "Expenses chart website for frontendmentor.io",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremylloyd/expenses-chart-component.git"
+  },
+  "author": "Jeremy Lloyd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremylloyd/expenses-chart-component/issues"
+  },
+  "homepage": "https://github.com/jeremylloyd/expenses-chart-component#readme",
+  "dependencies": {
+    "echarts": "^5.3.3"
+  }
+}
