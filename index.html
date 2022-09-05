@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- Prepare a DOM with a defined width and height for ECharts -->
-    <div id="main" style="width: 600px;height:400px;"></div>
+    <div id="main" style="width: 100vw;height:100vh;background-color: lightgrey;"></div>
     <script type="text/javascript">
       // Initialize the echarts instance based on the prepared dom
       var myChart = echarts.init(document.getElementById('main'));
@@ -32,11 +32,16 @@
             type: 'bar',
             data: [5, 20, 36, 10, 10, 20, 15]
           }
-        ]
+        ],
       };
 
       // Display the chart using the configuration items and data just specified.
       myChart.setOption(option);
+
+      // Resize the chart whenever the browser is
+      window.onresize = function() {
+        myChart.resize();
+      };
     </script>
   </body>
 </html>
