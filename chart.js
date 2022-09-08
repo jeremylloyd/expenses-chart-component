@@ -34,16 +34,32 @@ function loadChartData(obj) {
 
   var option = {
     title: {
-      text: "ECharts Getting Started Example",
+      text: "Spending - Last 7 days",
+      textStyle: {
+        color: "hsl(25, 47%, 15%)",
+        fontSize: "24px",
+      },
     },
     tooltip: {},
+    textStyle: {
+      fontFamily: 'DM Sans',
+      color: "hsl(28, 10%, 53%)",
+    },
     legend: {
-      data: ["sales"],
+      show: false,
     },
     xAxis: {
       data: days,
+      axisTick: {
+        show: false,
+      },
+      axisLine: {
+        show: false,
+      },
     },
-    yAxis: {},
+    yAxis: {
+      show: false,
+    },
     series: [
       {
         name: "sales",
