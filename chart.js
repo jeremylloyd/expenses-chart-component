@@ -39,10 +39,19 @@ function loadChartData(obj) {
         color: "hsl(25, 47%, 15%)",
         fontSize: "24px",
       },
+      textAlign: "left",
     },
-    tooltip: {},
+    grid: {
+      left: "3%",
+      right: "3%",
+      top: "10%",
+      bottom: 40,
+    },
+    tooltip: {
+      // formatter: '{b}: {c}',
+    },
     textStyle: {
-      fontFamily: 'DM Sans',
+      fontFamily: "DM Sans",
       color: "hsl(28, 10%, 53%)",
     },
     legend: {
@@ -67,7 +76,9 @@ function loadChartData(obj) {
         data: amounts,
         itemStyle: {
           color: "hsl(10, 79%, 65%)",
+          barBorderRadius: 4,
         },
+        barCategoryGap: "25%",
       },
     ],
   };
