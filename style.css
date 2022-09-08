@@ -1,3 +1,12 @@
+:root {
+  --theme-softsalmon: hsl(10, 79%, 65%);
+  --theme-cyan: hsl(186, 34%, 60%);
+  --theme-darkbrown: hsl(25, 47%, 15%);
+  --theme-mediumbrown: hsl(28, 10%, 53%);
+  --theme-cream: hsl(27, 66%, 92%);
+  --theme-verypaleorange: hsl(33, 100%, 98%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
