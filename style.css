@@ -20,21 +20,28 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 15px;
 }
 
 header {
+  width: 335px;
+  padding: 20px;
+  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   background-color: var(--theme-softsalmon);
+  color: var(--theme-verypaleorange);
 }
 
 main {
+  width: 335px;
   background-color: var(--theme-verypaleorange);
+  border-radius: 10px;
+  padding: 30px 20px;
 }
 
 #chart-expenses {
-  max-height: 500px;
-  max-width: 335px;
+  min-height: 250px;
 }
 
 main > section {
