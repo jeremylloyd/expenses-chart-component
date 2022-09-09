@@ -6,7 +6,7 @@ fetch("./data.json")
   .then((obj) => loadChartData(obj));
 
 // Initialize the echarts instance based on the prepared dom
-var myChart = echarts.init(document.getElementById("main"));
+var myChart = echarts.init(document.getElementById("chart-expenses"));
 
 // Resize the chart whenever the browser is
 window.onresize = function () {
