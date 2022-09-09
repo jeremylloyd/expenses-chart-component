@@ -76,7 +76,7 @@ function loadChartData(obj) {
         data: amounts,
         itemStyle: {
           color: "hsl(10, 79%, 65%)",
-          barBorderRadius: 4,
+          borderRadius: 4,
         },
         barCategoryGap: "25%",
       },
