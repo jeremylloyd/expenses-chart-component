@@ -108,7 +108,7 @@ main > section {
 
 @media screen and (min-width: 600px) {
   body {
-    background-color: red;
+    gap: 30px;
   }
 
   header {
@@ -129,10 +129,28 @@ main > section {
   main {
     width: 540px;
     border-radius: 20px;
-    padding: 25px 20px 10px;
+    padding: 30px 40px 10px;
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 40px;
   }
 
   #chart-expenses {
-    min-height: 325px;
+    min-height: 215px;
+  }
+
+  hr {
+    margin-top: 20px;
+  }
+
+  main > section {
+    height: 150px;
+  }
+
+  #month-total {
+    font-size: 48px;
   }
 }
