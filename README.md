@@ -33,3 +33,14 @@ Users should be able to:
 - Apache Echarts
 
 ### What I learned
+
+- JS
+  - If statement shorthand
+    - `condition ? valueIfTrue : valueIfFalse`
+    - `window.innerWidth >= 600 ? 15 : 12`
+  - `window`
+    - `window` is a built-in variable referring to the browser window
+    - You can assign a function to `window.onresize` to restyle objects as the user resizes the browser
+    - `window.innerWidth` and `window.innerHeight` are useful properties
+- Echarts
+  - You can't style Echarts with CSS. If you need to make part of the chart responsive, choose HTML/CSS wherever possible (i.e. the "Spending - Last 7 days" title)
