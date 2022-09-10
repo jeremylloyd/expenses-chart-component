@@ -32,6 +32,10 @@ Users should be able to:
 - JS
 - Apache Echarts
 
+### HTML Design
+
+![](./design/html_design.png)
+
 ### What I learned
 
 - JS
@@ -48,6 +52,7 @@ Users should be able to:
         .then((f) => f.json())
         .then((obj) => loadChartData(obj));```
     - The `fetch` function returns a promise, which is asynchronous (as are a lot of functions in JS compared to python). You feed the result to a function which is run when the promise resolves
+  - `new Date()` returns JavaScript's datetime object
 - Echarts
   - Load it from CDN using `<script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.js"></script>`
   - You can't style Echarts with CSS. If you need to make part of the chart responsive, choose HTML/CSS wherever possible (i.e. the "Spending - Last 7 days" title)

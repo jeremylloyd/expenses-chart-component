@@ -39,7 +39,8 @@ function loadChartData(obj) {
     let d = {
       value: obj[i].amount,
     };
-    if (obj[i].day === "wed") {
+    let todayStr = Date().toLowerCase().slice(0, 3);
+    if (obj[i].day === todayStr) {
       d["itemStyle"] = {
         color: "hsl(186, 34%, 60%)",
       };
