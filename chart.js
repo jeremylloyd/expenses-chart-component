@@ -1,16 +1,26 @@
 // Load JSON data
 let data;
-console.log("Getting data...");
 fetch("./data.json")
   .then((f) => f.json())
   .then((obj) => loadChartData(obj));
 
 // Initialize the echarts instance based on the prepared dom
-var myChart = echarts.init(document.getElementById("chart-expenses"));
+const chart = document.getElementById("chart-expenses");
+var myChart = echarts.init(chart);
 
 // Resize the chart whenever the browser is
 window.onresize = function () {
   myChart.resize();
+
+  let option = {
+    xAxis: {
+      axisLabel: {
+        fontSize: window.innerWidth >= 600 ? 15 : 12,
+        margin: window.innerWidth >= 600 ? 12 : 15,
+      },
+    },
+  };
+  myChart.setOption(option);
 };
 
 function loadChartData(obj) {
@@ -34,8 +44,8 @@ function loadChartData(obj) {
 
   var option = {
     grid: {
-      left: "3%",
-      right: "3%",
+      left: -5,
+      right: -5,
       top: 0,
       bottom: "17%",
     },
@@ -50,15 +60,16 @@ function loadChartData(obj) {
       show: false,
     },
     xAxis: {
-      axisLabel: {
-        margin: 14,
-      },
       data: days,
       axisTick: {
         show: false,
       },
       axisLine: {
         show: false,
+      },
+      axisLabel: {
+        fontSize: window.innerWidth >= 600 ? 15 : 12,
+        margin: 15,
       },
     },
     yAxis: {
