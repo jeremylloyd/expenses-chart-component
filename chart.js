@@ -19,6 +19,11 @@ window.onresize = function () {
         margin: window.innerWidth >= 600 ? 12 : 15,
       },
     },
+    tooltip: {
+      textStyle: {
+        fontSize: window.innerWidth >= 600 ? 18 : 15,
+      },
+    },
   };
   myChart.setOption(option);
 };
@@ -59,7 +64,7 @@ function loadChartData(obj) {
       textStyle: {
         color: "hsl(33, 100%, 98%)",
         fontWeight: 700,
-        fontSize: 18,
+        fontSize: window.innerWidth >= 600 ? 18 : 15,
       },
       padding: [5, 7],
     },
