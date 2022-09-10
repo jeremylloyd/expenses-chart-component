@@ -50,7 +50,18 @@ function loadChartData(obj) {
       bottom: "17%",
     },
     tooltip: {
-      // formatter: '{b}: {c}',
+      formatter: "${c}",
+      hideDelay: 200,
+      position: "top",
+      transitionDuration: 0.3,
+      backgroundColor: "hsl(25, 47%, 15%)",
+      borderWidth: 0,
+      textStyle: {
+        color: "hsl(33, 100%, 98%)",
+        fontWeight: 700,
+        fontSize: 18,
+      },
+      padding: [5, 7],
     },
     textStyle: {
       fontFamily: "DM Sans",
