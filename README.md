@@ -42,5 +42,13 @@ Users should be able to:
     - `window` is a built-in variable referring to the browser window
     - You can assign a function to `window.onresize` to restyle objects as the user resizes the browser
     - `window.innerWidth` and `window.innerHeight` are useful properties
+  - Reading json data with `fetch()`
+    - ```let data;
+      fetch("./data.json")
+        .then((f) => f.json())
+        .then((obj) => loadChartData(obj));```
+    - The `fetch` function returns a promise, which is asynchronous (as are a lot of functions in JS compared to python). You feed the result to a function which is run when the promise resolves
 - Echarts
+  - Load it from CDN using `<script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.js"></script>`
   - You can't style Echarts with CSS. If you need to make part of the chart responsive, choose HTML/CSS wherever possible (i.e. the "Spending - Last 7 days" title)
+  - You can style almost anything by using `myChart.setOption(option);`. Options listed in the [Echarts Documentation](https://echarts.apache.org/en/option.html)
