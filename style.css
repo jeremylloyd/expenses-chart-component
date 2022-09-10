@@ -11,6 +11,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 body {
@@ -21,32 +22,79 @@ body {
   justify-content: center;
   align-items: center;
   gap: 15px;
+  min-height: 100vh;
 }
 
 header {
-  width: 335px;
+  width: 340px;
   padding: 20px;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
   background-color: var(--theme-softsalmon);
+  font-size: 15px;
   color: var(--theme-verypaleorange);
 }
 
+header > img {
+  width: 3.75rem;
+}
+
+.flex-spaced {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+#num-balance {
+  font-weight: 700;
+  font-size: 24px;
+}
+
 main {
-  width: 335px;
+  width: 345px;
   background-color: var(--theme-verypaleorange);
   border-radius: 10px;
-  padding: 30px 20px;
+  padding: 25px 25px 10px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: var(--theme-darkbrown);
 }
 
 #chart-expenses {
-  min-height: 250px;
+  min-height: 210px;
+}
+
+hr {
+  height: 2px;
+  margin-top: 15px;
+  background-color: var(--theme-cream);
 }
 
 main > section {
+  color: var(--theme-mediumbrown);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.strong {
+  color: var(--theme-darkbrown);
+  font-weight: 700;
+}
+
+#month-total {
+  font-size: 28px;
+  margin-top: 4px;
+}
+
+#month-difference {
+  margin-top: 24px;
+  text-align: right;
 }
 
 .attribution {
@@ -56,4 +104,35 @@ main > section {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: red;
+  }
+
+  header {
+    width: 540px;
+    padding: 25px 35px;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+
+  #num-balance {
+    font-size: 32px;
+  }
+
+  header > img {
+    width: 4.5rem;
+  }
+
+  main {
+    width: 540px;
+    border-radius: 20px;
+    padding: 25px 20px 10px;
+  }
+
+  #chart-expenses {
+    min-height: 325px;
+  }
 }

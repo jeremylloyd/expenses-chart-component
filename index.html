@@ -12,25 +12,26 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,700">
-</head>
+  </head>
   <body>
     <header>
-      <div>
+      <div class="flex-spaced">
         <p>My balance</p>
-        <p>$921.48</p>
+        <p id="num-balance">$921.48</p>
       </div>
       <img src="images/logo.svg" alt="company-logo">
     </header>
     <main>
+      <h1>Spending - Last 7 days</h1>
       <div id="chart-expenses"></div>
       <hr>
       <section>
         <div>
           <p>Total this month</p>
-          <p>$478.33</p>
+          <p id="month-total" class="strong">$478.33</p>
         </div>
-        <div>
-          <p>+2.4%</p>
+        <div id="month-difference">
+          <p class="strong">+2.4%</p>
           <p>from last month</p>
         </div>
       </section>

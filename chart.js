@@ -33,19 +33,11 @@ function loadChartData(obj) {
   }
 
   var option = {
-    title: {
-      text: "Spending - Last 7 days",
-      textStyle: {
-        color: "hsl(25, 47%, 15%)",
-        fontSize: "24px",
-      },
-      textAlign: "left",
-    },
     grid: {
       left: "3%",
       right: "3%",
-      top: "10%",
-      bottom: 40,
+      top: 0,
+      bottom: "17%",
     },
     tooltip: {
       // formatter: '{b}: {c}',
@@ -58,6 +50,9 @@ function loadChartData(obj) {
       show: false,
     },
     xAxis: {
+      axisLabel: {
+        margin: 14,
+      },
       data: days,
       axisTick: {
         show: false,
